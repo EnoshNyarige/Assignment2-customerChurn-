@@ -5,9 +5,11 @@
 - conda install -c anaconda flask
 
 To run this project, Clone and make sure you: 
-1. are in the project root directory
-2. run *python model.py* to serialize the model
-3. then run *python app.py* to start the Flask API
+* are in the project root directory
+* run the command here to serialize the model
+  * `python model.py`
+* run the command here to start the Flask API
+  * `python app.py`
 
 
 Navigate to URL http://localhost:5000 to preview the web app
