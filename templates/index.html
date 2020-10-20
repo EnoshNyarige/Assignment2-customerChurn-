@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Churn[Enosh]</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+  <h1>Enosh Nyarige</h1><br/>
+	<h3>Predict The probability to churn</h3>
+  <h6>The fields below are all required</h6>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	  <input type="text" name="Monthly Charges" placeholder="charges" required="required" />
+        <input type="text" name="Total Charges" placeholder="charges" required="required" />
+        <input type="text" name="Tenure" placeholder="tenure period" required="required" />
+        
+        <p>Payment Electronic?</p>
+       <label for="male">Yes</label> 
+       <input type="radio" id="male" name="gender" value="male" required="required">
+         <label for="female">No</label>
+        <input type="radio" id="female" name="gender" value="female" required="required">
+       
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
