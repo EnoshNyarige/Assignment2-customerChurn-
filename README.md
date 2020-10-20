@@ -2,7 +2,7 @@
 
 **I used Flask API in this deployment. Check that you have installed it before going to the next steps**
 
-- conda install -c anaconda flask
+- `conda install -c anaconda flask`
 
 To run this project, Clone and make sure you: 
 * are in the project root directory
