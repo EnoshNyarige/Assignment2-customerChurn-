@@ -6,8 +6,8 @@
 
 To run this project, Clone and make sure you: 
 1. are in the project root directory
-2. run python model.py to serialize the model
-3. python app.py to start the Flask API
+2. run *python model.py* to serialize the model
+3. then run *python app.py* to start the Flask API
 
 
 Navigate to URL http://localhost:5000 to preview the web app
